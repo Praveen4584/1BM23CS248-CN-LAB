@@ -1,0 +1,37 @@
+OUTPUT 1 
+$ cc socketserver.c
+$ ./a.out 1025
+server:
+waiting for connection
+
+server received:/home/aps/cse.txt
+server:/home/aps/cse.txt found
+ opening and reading..
+reading..
+..reading complete
+transfer complete
+
+$ cc  socketclient.c
+$ ./a.out 1025
+Enter the file with complete path
+/home/aps/cse.txt
+Reading..
+..
+client: display content of /home/aps/cse.txt
+..
+Welcome to the CSE department..........
+
+
+OUTPUT2:
+$ cc fserver.c
+$ ./a.out
+error:no port no
+ usage:
+/server port no
+
+$ cc fclient.c
+ $./a.out 
+Err:no port no.
+usage:
+./client portno
+ ex:./client 7777
